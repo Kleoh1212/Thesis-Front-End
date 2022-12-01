@@ -1,0 +1,377 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Advising</title>
+  </head>
+  
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-light bg-light shadow bg-body rounded">
+      <div class="container-fluid">
+        <a class="navbar-brand">Student Advising</a>
+        <form class="d-flex">
+          <button class="btn btn-outline-success" type="submit">User Name</button>
+        </form>
+      </div>
+    </nav>
+    <!-- Test
+    <nav class="nav flex-column list-group">
+      <div class="container-fluid">
+      <a href="#" class="list-group-item list-group-item-success">A second link item</a>
+      <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+      <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+      </div>
+    </nav>
+  -->
+  <!--Side bar-->
+    <div class="container-fluid">
+      <div class="row justify-content-start">
+        <div class="col-3">
+          <div class="d-flex flex-column flex-shrink-0 p-3 bg-light shadow bg-body rounded border" style="width: 280px; height: 525px;">
+            <ul class="nav nav-pills flex-column mb-auto">
+              <li class="nav-item">
+                <a href="StudentProfile.html" class="nav-link text-dark shadow-sm mt-1 bg-body rounded">Student Profile</a>
+              </li>
+              <li>
+                <a href="Student Advising.html" class="nav-link text-white shadow-sm mt-1 rounded" style="background:#198754;" aria-current="page">Student Advising  </a>
+              </li>
+              <li>
+                <a href="index.html" class="nav-link text-dark shadow-sm mt-1 bg-body rounded">Logout</a>
+              </li>
+            </ul>
+          </div> 
+        </div>
+        <!--Student Information-->
+        <div class="col">
+            <div class="row mt-3">
+               <div class="col-lg-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="card-text mb-0">
+                                <span class="text-muted fst-italic wo">Semester: </span> First Semester
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               <div class="col-lg-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <div class="card-text mb-0">
+                            <span class="text-muted fst-italic wo">Semester: </span> First Semester
+                        </div>
+                    </div>
+                </div>
+           </div>
+            
+          </div>
+          <div class="row mt-3">
+                <div class="col">
+                    <b>Subjects</b>
+                </div>
+          </div>
+          <!--Another Row for personnal Infomartion-->
+        <div class="row mt-2">
+            <div class="col-lg-8">
+                <div class="card shadow ">
+                    <div class="card-body" >
+                        <div class="card-text">
+                            <table class="table table-hover">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Course Code</th>
+                                    <th scope="col">Course Title</th>
+                                    <th scope="col">Units</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">GNED 02</th>
+                                    <td>Ethics</td>
+                                    <td>3.00</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">GNED 05</th>
+                                    <td>Purposive Communication</td>
+                                    <td>3.00</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">GNED 11</th>
+                                    <td>Kontekstwalisadong Komunikasyon sa Filipino</td>
+                                    <td>3.00</td>
+                                    </tr>
+                                  <tr>
+                                    <th scope="row">DCIT 21</th>
+                                    <td>Discrete Computing</td>
+                                    <td>3.00</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">DCIT 22</th>
+                                    <td>Introduction to Computing</td>
+                                    <td>3.00</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">FITT 1</th>
+                                    <td>Movement Enhancement</td>
+                                    <td>3.00</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">NSTP 1</th>
+                                    <td>National Service Training Program 1</td>
+                                    <td>2.00</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">ORNT 1</th>
+                                    <td>Institutional Orientation</td>
+                                    <td>1.00</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        </div>      
+                    </div>
+                </div>
+                <!--end of subject table-->
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                   <div class="card-body">
+                        <div class="card-text">
+                            <table class="table ">
+                                <thead>
+                                    <tr>
+                                    <th scope="col">Input Grades</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><div class="input-group input-group-sm mb-0"> 
+                                            <select class="form-select has-validation" id="inputGroupSelect01">
+                                                <option value="selected">0.00</option>
+                                                <option value="1">1.00</option>
+                                                <option value="2">1.25</option>
+                                                <option value="3">1.50</option>
+                                                <option value="4">1.75</option>
+                                                <option value="5">2.00</option>
+                                                <option value="6">2.25</option>
+                                                <option value="7">2.50</option>
+                                                <option value="8">2.75</option>
+                                                <option value="9">3.00</option>
+                                                <option value="10">4.00</option>
+                                                <option value="11">5.00</option>
+                                            </select>
+                                          </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="input-group input-group-sm mb-0"> 
+                                            <select class="form-select" id="inputGroupSelect01">
+                                                <option value="selected">0.00</option>
+                                                <option value="1">1.00</option>
+                                                <option value="2">1.25</option>
+                                                <option value="3">1.50</option>
+                                                <option value="4">1.75</option>
+                                                <option value="5">2.00</option>
+                                                <option value="6">2.25</option>
+                                                <option value="7">2.50</option>
+                                                <option value="8">2.75</option>
+                                                <option value="9">3.00</option>
+                                                <option value="10">4.00</option>
+                                                <option value="11">5.00</option>
+                                            </select>
+                                          </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="input-group input-group-sm mb-0"> 
+                                            <select class="form-select" id="inputGroupSelect01">
+                                                <option value="selected">0.00</option>
+                                                <option value="1">1.00</option>
+                                                <option value="2">1.25</option>
+                                                <option value="3">1.50</option>
+                                                <option value="4">1.75</option>
+                                                <option value="5">2.00</option>
+                                                <option value="6">2.25</option>
+                                                <option value="7">2.50</option>
+                                                <option value="8">2.75</option>
+                                                <option value="9">3.00</option>
+                                                <option value="10">4.00</option>
+                                                <option value="11">5.00</option>
+                                            </select>
+                                          </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="input-group input-group-sm mb-0"> 
+                                            <select class="form-select" id="inputGroupSelect01">
+                                                <option value="selected">0.00</option>
+                                                <option value="1">1.00</option>
+                                                <option value="2">1.25</option>
+                                                <option value="3">1.50</option>
+                                                <option value="4">1.75</option>
+                                                <option value="5">2.00</option>
+                                                <option value="6">2.25</option>
+                                                <option value="7">2.50</option>
+                                                <option value="8">2.75</option>
+                                                <option value="9">3.00</option>
+                                                <option value="10">4.00</option>
+                                                <option value="11">5.00</option>
+                                            </select>
+                                          </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="input-group input-group-sm mb-0"> 
+                                            <select class="form-select" id="inputGroupSelect01">
+                                                <option value="selected">0.00</option>
+                                                <option value="1">1.00</option>
+                                                <option value="2">1.25</option>
+                                                <option value="3">1.50</option>
+                                                <option value="4">1.75</option>
+                                                <option value="5">2.00</option>
+                                                <option value="6">2.25</option>
+                                                <option value="7">2.50</option>
+                                                <option value="8">2.75</option>
+                                                <option value="9">3.00</option>
+                                                <option value="10">4.00</option>
+                                                <option value="11">5.00</option>
+                                            </select>
+                                          </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="input-group input-group-sm mb-0"> 
+                                            <select class="form-select" id="inputGroupSelect01">
+                                                <option value="1">1.00</option>
+                                                <option value="2">1.25</option>
+                                                <option value="3">1.50</option>
+                                                <option value="4">1.75</option>
+                                                <option value="5">2.00</option>
+                                                <option value="6">2.25</option>
+                                                <option value="7">2.50</option>
+                                                <option value="8">2.75</option>
+                                                <option value="9">3.00</option>
+                                                <option value="10">4.00</option>
+                                                <option value="11">5.00</option>
+                                            </select>
+                                          </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="input-group input-group-sm mb-0"> 
+                                            <select class="form-select" id="inputGroupSelect01">
+                                                <option value="selected">0.00</option>
+                                                <option value="1">1.00</option>
+                                                <option value="2">1.25</option>
+                                                <option value="3">1.50</option>
+                                                <option value="4">1.75</option>
+                                                <option value="5">2.00</option>
+                                                <option value="6">2.25</option>
+                                                <option value="7">2.50</option>
+                                                <option value="8">2.75</option>
+                                                <option value="9">3.00</option>
+                                                <option value="10">4.00</option>
+                                                <option value="11">5.00</option>
+                                            </select>
+                                          </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="input-group input-group-sm mb-0"> 
+                                            <select class="form-select" id="inputGroupSelect01">
+                                                <option value="selected">0.00</option>
+                                                <option value="1">1.00</option>
+                                                <option value="2">1.25</option>
+                                                <option value="3">1.50</option>
+                                                <option value="4">1.75</option>
+                                                <option value="5">2.00</option>
+                                                <option value="6">2.25</option>
+                                                <option value="7">2.50</option>
+                                                <option value="8">2.75</option>
+                                                <option value="9">3.00</option>
+                                                <option value="10">4.00</option>
+                                                <option value="11">5.00</option>
+                                            </select>
+                                          </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><button type="button" class="btn btn-success btn-center" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                            Submit
+                                          </button></td>
+                                          <!--modal-->
+                                          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body ">
+                                                    <div class="row mt-3">
+                                                        <div class="col-lg-12">
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <p class="fw-bold">Course Code <span style="margin-left:50px;"> Course Title </span> <span class="fw-bold" style="margin-left:110px;">Units</span></p> <hr>
+                                                                    <p class="mb-1">GNED 01<span style="margin-left:30px;"> Arts Appreciation</span><span class="fw-bold" style="margin-left:133px;"> 3.00 </span>   </p>  
+                                                                    <p class="mb-1">GNED 06<span style="margin-left:27px;"> Science, Technology, and Society</span><span class="fw-bold" style="margin-left:18px;"> 3.00 </span>  </p>  
+                                                                    <p class="mb-1">GNED 12<span style="margin-left:27px;"> Dalumat Ng/Sa Filipino</span><span class="fw-bold" style="margin-left:92px;"> 3.00 </span>   </p>  
+                                                                    <p class="mb-1">GNED 03<span style="margin-left:27px;"> Mathematics in the Modern World</span><span class="fw-bold" style="margin-left:17px;"> 3.00 </span>  </p>
+                                                                    <p class="mb-1">DCIT 23<span style="margin-left:35px;"> Computer Programming 2</span><span class="fw-bold" style="margin-left:74px;"> 3.00 </span>  </p>
+                                                                    <p class="mb-1">ITEC 50<span style="margin-left:35px;"> Web Systems and Technologies</span><span class="fw-bold" style="margin-left:32px;"> 3.00 </span>  </p>
+                                                                    <p class="mb-1">FITT 2<span style="margin-left:53px;">Fitness Exercise</span><span class="fw-bold" style="margin-left:141px;"> 2.00 </span>  </p>
+                                                                    <p class="mb-1">NSTP 2<span style="margin-left:38px;"> National Service Training Program 2</span><span class="fw-bold" style="margin-left:2px;"> 3.00 </span>  </p>  
+                                                        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <!--Another Row for personnal Infomartion-->
+        
+        </div>
+        <!--Footer-->
+    <footer id="footer" class="text-white bg-success">
+      <text> Copyright 2022. All Rights Reserved </text> 
+      <!--
+      <text class="bolder">Cavite State University - CCAT Campus</text>
+  -->
+    </footer>  
+    </div>
+
+     
+      
+</div>
+
+       
+  
+   
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

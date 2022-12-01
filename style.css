@@ -53,3 +53,15 @@ body{
 .container-fluid{
     box-shadow: 2px;
 }
+#course{
+    margin-left: 10%;
+    width: 200px;
+    
+    margin-right: 10%;
+}
+#name{
+    word-spacing: 2.5%;
+}
+#footer{
+    margin-top: 12PX;
+}
